@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Mouse</title>
+</head>
+<body>
+    <h1>Virtual Mouse Controller</h1>
+    <button onclick="startMouse()">Start Virtual Mouse</button>
+
+    <script>
+        function startMouse() {
+            fetch("/start").then(res => alert("Virtual Mouse Started!"));
+        }
+    </script>
+</body>
+</html>
